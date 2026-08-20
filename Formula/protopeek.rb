@@ -5,25 +5,25 @@ class Protopeek < Formula
 
   on_macos do
     on_arm do
-      url "https://github.com/shreyam1008/ProtoPeek/releases/download/v0.3.0/protopeek_0.3.0_osx_arm64.tar.gz"
-      sha256 "d8c29244d5a1d2800240713da677efe092fa2db8bd789e6ccb214fc537ad4fc9"
+      url "https://github.com/shreyam1008/ProtoPeek/releases/download/v0.3.1/protopeek_0.3.1_osx_arm64.tar.gz"
+      sha256 "b6d5cadc724636f8a762abc01184417d409fd2fe53be7445bbd8539209b03f4c"
     end
 
     on_intel do
-      url "https://github.com/shreyam1008/ProtoPeek/releases/download/v0.3.0/protopeek_0.3.0_osx_x86_64.tar.gz"
-      sha256 "f46fc1bd56ce6602750eed04f3857982c427a6065505d17c8ba39eaffa5e0f53"
+      url "https://github.com/shreyam1008/ProtoPeek/releases/download/v0.3.1/protopeek_0.3.1_osx_x86_64.tar.gz"
+      sha256 "5bb0fc8da50b746f79082edf732f4163d55cabb5ad5214cbb6a4f5ca5fe9942a"
     end
   end
 
   on_linux do
     on_arm do
-      url "https://github.com/shreyam1008/ProtoPeek/releases/download/v0.3.0/protopeek_0.3.0_linux_arm64.tar.gz"
-      sha256 "fef9ef3bc17b7d2a9e81c2cb78983be4be2f7b4fdf5bee458e8f37d417a9b77b"
+      url "https://github.com/shreyam1008/ProtoPeek/releases/download/v0.3.1/protopeek_0.3.1_linux_arm64.tar.gz"
+      sha256 "133655b11e41ac7faa6b4e76770e0b1a48513f6d9f493b86f5cd271bf2ca66a2"
     end
 
     on_intel do
-      url "https://github.com/shreyam1008/ProtoPeek/releases/download/v0.3.0/protopeek_0.3.0_linux_x86_64.tar.gz"
-      sha256 "b1352d07ca648983771a382ac9456c31bcc8f33f5e0e8adf8346cc4440ee55e5"
+      url "https://github.com/shreyam1008/ProtoPeek/releases/download/v0.3.1/protopeek_0.3.1_linux_x86_64.tar.gz"
+      sha256 "c0d3ce04e6011cd298f66de90b59f19150cb1d3c217243da561ff4db5df96432"
     end
   end
 
