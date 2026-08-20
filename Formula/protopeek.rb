@@ -1,7 +1,6 @@
 class Protopeek < Formula
   desc "Local protocol workbench for gRPC, HTTP, and bounded network evidence"
   homepage "https://protopeek.shreyam1008.com.np/"
-  version "0.3.1"
   license "MIT"
 
   on_macos do
