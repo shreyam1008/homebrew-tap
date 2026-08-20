@@ -36,7 +36,7 @@ jobs:
           brew install shreyam1008/tap/protopeek
           brew test shreyam1008/tap/protopeek
           brew linkage --test shreyam1008/tap/protopeek
-          protopeek -version 2>&1 | grep -F 'v0.3.1'
-          pp -version 2>&1 | grep -F 'v0.3.1'
+          protopeek -version 2>&1 | grep -F 'v0.3.2'
+          pp -version 2>&1 | grep -F 'v0.3.2'
           test -f "$(brew --prefix)/share/man/man1/protopeek.1"
           test -f "$(brew --prefix)/share/man/man1/pp.1"
