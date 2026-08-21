@@ -10,7 +10,7 @@ permissions:
   contents: read
 
 jobs:
-  protopeek:
+  tap:
     strategy:
       fail-fast: false
       matrix:
@@ -24,19 +24,25 @@ jobs:
 
       - uses: Homebrew/actions/setup-homebrew@8f3d1ec8a696b3b9d9a6c3696b6c73033cab69e4
 
-      - name: Validate formula
+      - name: Validate formulas
         run: |
           brew style shreyam1008/tap/protopeek
           brew audit --strict shreyam1008/tap/protopeek
+          brew style shreyam1008/tap/dbterm
+          brew audit --strict shreyam1008/tap/dbterm
           brew readall --aliases --os=all --arch=all shreyam1008/tap
 
-      - name: Install and smoke test
+      - name: Install and smoke test both products
         run: |
           set -euo pipefail
           brew install shreyam1008/tap/protopeek
+          brew install shreyam1008/tap/dbterm
           brew test shreyam1008/tap/protopeek
+          brew test shreyam1008/tap/dbterm
           brew linkage --test shreyam1008/tap/protopeek
+          brew linkage --test shreyam1008/tap/dbterm
           protopeek -version 2>&1 | grep -F 'v0.4.0'
           pp -version 2>&1 | grep -F 'v0.4.0'
+          dbterm --version 2>&1 | grep -F 'v0.10.0'
           test -f "$(brew --prefix)/share/man/man1/protopeek.1"
           test -f "$(brew --prefix)/share/man/man1/pp.1"
