@@ -3,6 +3,8 @@ class Protopeek < Formula
   homepage "https://protopeek.shreyam1008.com.np/"
   license "MIT"
 
+  depends_on "aria2"
+
   on_macos do
     on_arm do
       url "https://github.com/shreyam1008/ProtoPeek/releases/download/v0.4.0/protopeek_0.4.0_osx_arm64.tar.gz"
@@ -35,5 +37,6 @@ class Protopeek < Formula
   test do
     assert_match "v#{version}", shell_output("#{bin}/protopeek -version 2>&1")
     assert_match "v#{version}", shell_output("#{bin}/pp -version 2>&1")
+    assert_match "aria2 version", shell_output("aria2c --version")
   end
 end
