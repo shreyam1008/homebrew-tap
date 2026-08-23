@@ -41,8 +41,9 @@ jobs:
           brew test shreyam1008/tap/dbterm
           brew linkage --test shreyam1008/tap/protopeek
           brew linkage --test shreyam1008/tap/dbterm
-          protopeek -version 2>&1 | grep -F 'v0.4.0'
-          pp -version 2>&1 | grep -F 'v0.4.0'
+          protopeek -version 2>&1 | grep -F 'v0.5.0'
+          pp -version 2>&1 | grep -F 'v0.5.0'
+          aria2c --version | grep -F 'aria2 version'
           dbterm --version 2>&1 | grep -F 'v0.10.0'
           test -f "$(brew --prefix)/share/man/man1/protopeek.1"
           test -f "$(brew --prefix)/share/man/man1/pp.1"
